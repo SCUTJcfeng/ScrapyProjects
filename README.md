@@ -21,8 +21,8 @@ Scrapy Projects
 
 ****
 ## 项目目录
-* [lagouJobs](#lagouJobs)
-* [lagouPCJobs](#lagouPCJobs)
+* [lagouJobs](#lagoujobs)
+* [lagouPCJobs](#lagoupcjobs)
 
 lagouJobs
 ------
