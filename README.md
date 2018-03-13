@@ -20,9 +20,9 @@ Scrapy Projects
 
 
 ****
-## 目录
+## 项目目录
 * [lagouJobs](#lagouJobs)
-* [...](#...)
+* [lagouPCJobs](#lagouPCJobs)
 
 lagouJobs
 ------
@@ -66,4 +66,17 @@ class LagoujobsItem(scrapy.Item):
 |4|这个条状图显示的多一些|![Python_Jobs_Top_CompanyName_Bar.PNG](./lagouJobs/Python_Jobs_Top_CompanyName_Bar.PNG)|
 |5|只保留深圳本地的，前3名是博奥特、乐易和国双|![Python_Jobs_Shenzhen_CompanyName_Bar.PNG](./lagouJobs/Python_Jobs_Shenzhen_CompanyName_Bar.PNG)|
 
-...
+lagouPCJobs
+------
+本项目主要通过Selenium + Chrome + Xpath 爬取拉勾网职位列表，结果同样输出到CSV文件。
+
+Known Issue：
+1. 会出现最后一页或者还不到最后一页时，停止翻页，但数据还在写入（endless），必须强制关闭程序，造成大量重复数据；
+2. 数据未去重。
+
+Todo：
+1. 利用数据库去重；
+2. 弄明白Issue 1.
+
+贴个图吧：
+![screenshots.PNG](./lagouPCJobs/lagouPCJobs/screenshots.PNG)
