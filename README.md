@@ -23,6 +23,7 @@ Scrapy Projects
 ## 项目目录
 * [lagouJobs](#lagoujobs)
 * [lagouPCJobs](#lagoupcjobs)
+* [jdScrapy](#jdScrapy)
 
 lagouJobs
 ------
@@ -80,3 +81,18 @@ Todo：
 
 贴个图吧：
 ![screenshots.PNG](./lagouPCJobs/lagouPCJobs/screenshots.PNG)
+
+jdScrapy
+------
+本项目流程跟上面一样，抓取目标变成京东，不过url可以加个'&page='，这样简单点。
+
+Known Issue：
+1. 翻到第二页就开始数据无限重复；
+2. 数据未去重。
+
+Todo：
+1. 利用数据库去重；
+2. 弄明白Issue 1.
+
+贴个图吧：
+![screenshots.PNG](./jdScrapy/screenshots.PNG)
